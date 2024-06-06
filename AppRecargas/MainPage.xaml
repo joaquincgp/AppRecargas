@@ -8,7 +8,7 @@
         <Label Text="Ingrese el número de telefono" 
                FontSize="Medium" />
 
-        <Entry x:Name="JCIngresoTexto" 
+        <Entry x:Name="JCTelefonoEntry" 
                Placeholder="Número telefónico" 
                Keyboard="Telephone" />
 
@@ -54,10 +54,11 @@
             
             
         </Label>
-        
 
-        <Button Text="Recargar" 
-                Clicked="Button_Clicked" />
+
+        <Button x:Name="JCBotonRecarga"
+                Text="Recargar" 
+                Clicked="RecargarClicked" />
 
         
     </StackLayout>

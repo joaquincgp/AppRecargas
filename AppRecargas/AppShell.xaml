@@ -8,7 +8,7 @@
     Title="AppRecargas">
 
     <ShellContent
-        Title="Home"
+        Title="Recarga telefonica"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 
