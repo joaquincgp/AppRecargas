@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRecargas.MainPage">
+
+    <StackLayout Padding="20">
+
+        <Label Text="Ingrese el número de telefono" 
+               FontSize="Medium" />
+
+        <Entry x:Name="JCIngresoTexto" 
+               Placeholder="Número telefónico" 
+               Keyboard="Telephone" />
+
+        <Label Text="Seleccione el operador" 
+               FontSize="Medium" />
+
+        <Picker x:Name="JCSelectionList">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Movistar</x:String>
+                    <x:String>Claro</x:String>
+                    <x:String>Tuenti</x:String>
+                    <x:String>CNT</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Label Text="Seleccione el valor de la recarga" 
+               FontSize="Medium" />
+
+        <StackLayout>
+            <RadioButton x:Name="JCRecarga3" 
+                         Content="3 dólares" 
+                         GroupName="RecargaGroup" />
+            <RadioButton x:Name="JCRecarga5" 
+                         Content="5 dólares" 
+                         GroupName="RecargaGroup" />
+            <RadioButton x:Name="JCRecarga10" 
+                         Content="10 dólares" 
+                         GroupName="RecargaGroup" />
+        </StackLayout>
+
+        <Button Text="Recargar" 
+                Clicked="Button_Clicked" />
+
+        <Label x:Name="JCLabelResultado" 
+               FontSize="Medium" 
+               TextColor="Green" />
+    </StackLayout>
+
+</ContentPage>
+
