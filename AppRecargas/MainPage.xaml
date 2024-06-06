@@ -32,21 +32,34 @@
         <StackLayout>
             <RadioButton x:Name="JCRecarga3" 
                          Content="3 dólares" 
-                         GroupName="RecargaGroup" />
+                         GroupName="RecargaGroup"
+                         CheckedChanged="OnRecargaCheckedChanged"/>
             <RadioButton x:Name="JCRecarga5" 
                          Content="5 dólares" 
-                         GroupName="RecargaGroup" />
+                         GroupName="RecargaGroup"
+                         CheckedChanged="OnRecargaCheckedChanged"/>
             <RadioButton x:Name="JCRecarga10" 
                          Content="10 dólares" 
-                         GroupName="RecargaGroup" />
+                         GroupName="RecargaGroup"
+                         CheckedChanged="OnRecargaCheckedChanged"/>
         </StackLayout>
+
+
+        <Label x:Name="JCMensajeRecarga" 
+               FontSize="Medium" 
+               TextColor="White"
+               HorizontalTextAlignment="Center"/>
+
+        <Label>
+            
+            
+        </Label>
+        
 
         <Button Text="Recargar" 
                 Clicked="Button_Clicked" />
 
-        <Label x:Name="JCLabelResultado" 
-               FontSize="Medium" 
-               TextColor="Green" />
+        
     </StackLayout>
 
 </ContentPage>

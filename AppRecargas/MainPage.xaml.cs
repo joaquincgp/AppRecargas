@@ -13,6 +13,15 @@
         {
 
         }
+
+        private void OnRecargaCheckedChanged(object sender, CheckedChangedEventArgs e)
+        {
+            var radioButton = sender as RadioButton;
+            if (radioButton.IsChecked)
+            {
+                JCMensajeRecarga.Text = $"Ha seleccionado una recarga de: {radioButton.Content} dolares";
+            }
+        }
     }
 
 }
